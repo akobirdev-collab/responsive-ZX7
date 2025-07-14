@@ -587,5 +587,17 @@ footer {
 }
 
 .bottom-href {
+    display: flex;
+    gap: 20px;
     padding-top: 100px;
+}
+.bottom-href a{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 160%;
+    letter-spacing: -0.01em;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    text-align: center;
+    color: #a471d8;
 }
