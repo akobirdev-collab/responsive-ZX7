@@ -472,3 +472,85 @@ nav a:hover {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+.social-media-title{
+    padding-top: 100px;
+}
+.social-media{
+    padding-top: 100px;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    padding-bottom: 120px;
+}
+.span-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.span-box span:first-child{
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 109%;
+        color: #19082a;
+}
+.span-box span:last-child{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 133%;
+        color: #706a75;
+}
+.social-media div{
+    border-radius: 40px 20px;
+    padding: 0px 20px;
+    width: 313px;
+    height: 100px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+}
+.social-media_item{
+    transition: all 0.2s ease;
+}
+.social-media_item:hover{
+    transition: all 0.2s ease;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        
+}
+/*footer style*/
+footer{
+    background: #fff;padding: 50px 344px 50px 344px;
+}
+.footer-box{
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-box img{
+    padding-bottom: 40px;
+}
+.main-href{
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 167%;
+    color: #a471d8;
+}
+.footer-box span{
+    padding-top: 30px;
+    display: inline-block;
+    width: 692px;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 145%;
+    letter-spacing: -0.01em;
+    text-align: center;
+    color: #a471d8;
+    height: 47px;
+}
+.bottom-href{
+    padding-top: 100px;
+}
