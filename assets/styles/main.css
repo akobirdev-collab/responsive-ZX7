@@ -132,9 +132,6 @@ nav a:hover {
     header button {
         display: none;
     }
-    header .header-btn{
-        padding-left: 150px;
-    }
 }
 
 /*main style*/
@@ -252,8 +249,9 @@ nav a:hover {
     .main-section-title h1 {
         width: 100%;
         text-align: center;
-            height: 78px;
+        height: 78px;
         font-size: 24px;
+        padding-bottom: 25px;
     }
 
     .food-menu {
@@ -262,6 +260,7 @@ nav a:hover {
         height: auto;
         font-size: 14px;
         margin-top: 10px;
+        padding-bottom: 20px;
     }
 
     .main-section-title button {
@@ -762,7 +761,7 @@ nav a:hover {
         width: 100%;
         height: auto;
         padding: 40px 20px;
-        border-radius: 30px 15px;
+        border-radius: 40px 20px;
         position: relative;
         text-align: center;
         align-items: center;
