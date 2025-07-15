@@ -121,15 +121,20 @@ nav a:hover {
     background: #00f97d;
 }
 @media (max-width: 480px) {
-    .header-bar{
+    .header-bar {
         display: block;
+        font-size: 24px;
+        color: #0cc0df;
+        cursor: pointer;
+        position: relative;
+        z-index: 100;
     }
 
     header nav {
         display: none;
     }
 
-    header button {
+    .header-btn {
         display: none;
     }
 }
