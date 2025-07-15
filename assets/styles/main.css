@@ -15,7 +15,7 @@ body {
     max-width: 1230px;
     margin: 0 auto;
     padding: 0 15px;
-
+    overflow-y: hidden;
     box-sizing: border-box;
 }
 
@@ -822,7 +822,6 @@ nav a:hover {
 /*footer style*/
 footer {
     background: #fff;
-    padding: 50px 344px 50px 344px;
 }
 
 .footer-box {
