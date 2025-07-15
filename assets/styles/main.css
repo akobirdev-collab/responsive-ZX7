@@ -15,7 +15,7 @@ body {
     max-width: 1230px;
     margin: 0 auto;
     padding: 0 15px;
-
+    overflow-y: hidden;
     box-sizing: border-box;
 }
 
@@ -120,16 +120,39 @@ nav a:hover {
 .header-btn button:hover {
     background: #00f97d;
 }
-@media (max-width: 480px) {
-    .header-bar{
+@media (max-width: 360px) {
+    .header-bar {
         display: block;
+        font-size: 24px;
+        color: #0cc0df;
+        cursor: pointer;
+        position: relative;
+        z-index: 100;
     }
 
     header nav {
         display: none;
     }
 
-    header button {
+    .header-btn {
+        display: none;
+    }
+}
+@media (max-width: 480px) {
+    .header-bar {
+        display: block;
+        font-size: 24px;
+        color: #0cc0df;
+        cursor: pointer;
+        position: relative;
+        z-index: 100;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    .header-btn {
         display: none;
     }
 }
@@ -219,6 +242,80 @@ nav a:hover {
 .main-div_img>div {
     position: relative;
     z-index: 2;
+}
+@media (max-width: 360px) {
+    .main-section {
+        padding-bottom: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
+
+    }
+
+    .main_section-div {
+        margin-top: 0;
+        border-radius: 30px 15px;
+        width: 100%;
+        height: 683px;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 15px;
+    }
+
+    .main-section-title {
+        padding-top: 30px;
+        padding-left: 0;
+        padding-right: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .main-section-title h1 {
+        width: 100%;
+        text-align: center;
+        height: 78px;
+        font-size: 24px;
+        padding-bottom: 25px;
+    }
+
+    .food-menu {
+        display: block;
+        width: 100%;
+        height: auto;
+        font-size: 14px;
+        margin-top: 10px;
+        padding-bottom: 20px;
+    }
+
+    .main-section-title button {
+        width: 150px;
+        height: 40px;
+        font-size: 10px;
+        margin-top: 15px;
+    }
+
+    .main-div_img {
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+
+    .main-div_img>img:first-child {
+        position: absolute;
+        width: 329px;
+        height: auto;
+        top: 0;
+        left: 0;
+        margin: 10px auto;
+    }
+
+    .main-div_img>img:last-child {
+        position: absolute;
+        display: inline-block;
+        width: auto;
+        object-fit: contain;
+        height: auto;
+        margin: 0 auto;
+    }
 }
 @media (max-width: 480px) {
     .main-section {
@@ -370,7 +467,41 @@ nav a:hover {
     height: 80px;
     object-fit: contain;
 }
+@media (max-width: 360px) {
+    .partnyors {
+        display: flex;
+        align-items: center;
+        gap: 70px;
+        justify-content: space-between;
+        overflow-x: scroll;
+        flex-wrap: nowrap;
+    }
 
+    .secondary-section-title {
+        padding-top: 50px;
+        padding: 0px 10px;
+        width: 373px;
+        height: 112px;
+    }
+
+    .secondary-section-title h2 {
+        font-size: 24px;
+    }
+
+    .secondary-section-title p,
+    .bold {
+        font-size: 12px;
+    }
+
+    .secondary-food_icon {
+        display: flex;
+        flex-wrap: wrap;
+        width: 373px;
+        height: 240px;
+        padding-bottom: 50px;
+    }
+
+}
 @media (max-width: 480px)  {
     .partnyors{
         display: flex;
@@ -543,7 +674,77 @@ nav a:hover {
     line-height: 140%;
 }
 
+@media (max-width: 360px) {
+    .thirth-section_main-div {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        width: 100%;
+        padding: 20px;
+        border-radius: 30px 15px;
+    }
 
+    .thirth-section_title {
+        width: 100%;
+        padding-left: 0;
+        text-align: left;
+    }
+
+    .thirth-section_title h1 {
+        font-size: 24px;
+        padding-bottom: 20px;
+    }
+
+    .thirth-section_title p {
+        font-size: 14px;
+        text-align: left;
+    }
+
+    .thirth_section-btn {
+        justify-content: flex-start;
+    }
+
+    .thirth_section-btn button {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        padding: 12px 16px;
+    }
+
+    .thirth-section_img {
+        position: static;
+        width: 100%;
+        max-width: 340px;
+        height: auto;
+        object-fit: contain;
+        display: block;
+        margin: 20px auto 0 auto;
+    }
+
+    .subtitle_main-sub {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 16px 10px;
+    }
+
+    .subtitle_main-sub img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .subtitle_main-sub p {
+        font-size: 18px;
+    }
+
+    .subtitle_main-sub span {
+        font-size: 14px;
+    }
+
+    .thirth-sub-title h1 {
+        font-size: 28px;
+    }
+}
 @media (max-width: 480px) {
     .thirth-section_main-div {
         flex-direction: column;
@@ -747,6 +948,73 @@ nav a:hover {
     transform: scale(1.1) ;
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
 }
+@media (max-width: 360px) {
+    .fourth-section h1 {
+        font-size: 24px;
+    }
+
+    .fourth-section_div {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .fourth-section_div div {
+        width: 100%;
+        height: auto;
+        padding: 40px 20px;
+        border-radius: 40px 20px;
+        position: relative;
+        text-align: center;
+        align-items: center;
+    }
+
+    .fourth-section_div div p {
+        font-size: 24px;
+        line-height: normal;
+    }
+
+    .fourth-section_div div span {
+        font-size: 16px;
+    }
+
+    .fourth-section_div div button {
+        width: 160px;
+        height: 44px;
+        font-size: 12px;
+    }
+
+    .fourth-section_div div img {
+        position: static;
+        margin-top: 20px;
+        width: 120px;
+        height: auto;
+    }
+
+    .social-media {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding-top: 50px;
+        padding-bottom: 60px;
+    }
+
+    .social-media .social-media_item {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        padding: 20px;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .span-box span:first-child {
+        font-size: 18px;
+    }
+
+    .span-box span:last-child {
+        font-size: 14px;
+    }
+}
 @media (max-width: 480px) {
     .fourth-section h1 {
         font-size: 24px;
@@ -817,7 +1085,6 @@ nav a:hover {
 /*footer style*/
 footer {
     background: #fff;
-    padding: 50px 344px 50px 344px;
 }
 
 .footer-box {
@@ -866,6 +1133,49 @@ footer {
     text-decoration-skip-ink: none;
     text-align: center;
     color: #a471d8;
+}
+@media (max-width: 360px) {
+    footer {
+        padding: 30px 20px;
+    }
+
+    .footer-box {
+        padding-top: 30px;
+    }
+
+    .footer-box img {
+        width: 120px;
+        padding-bottom: 30px;
+    }
+
+    .main-href {
+        font-size: 18px;
+        text-align: center;
+        line-height: 140%;
+        display: block;
+        margin: 5px 0;
+    }
+
+    .footer-box span {
+        width: 100%;
+        font-size: 14px;
+        line-height: 140%;
+        padding-top: 20px;
+        text-align: center;
+        height: auto;
+    }
+
+    .bottom-href {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        padding-top: 40px;
+    }
+
+    .bottom-href a {
+        font-size: 14px;
+        line-height: 130%;
+    }
 }
 @media (max-width: 480px) {
     footer {
